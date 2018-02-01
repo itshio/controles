@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.controles.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hombre" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/boton_aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_boton"
+        />
+
+    <Button
+        android:id="@+id/boton_cancelar"
+        android:onClick="pulsarcancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_cancelar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="preferencias" />
+
+    <CheckBox
+        android:id="@+id/cb_musica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Musica" />
+
+    <CheckBox
+        android:id="@+id/cb_cine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cine" />
+
+    <CheckBox
+        android:id="@+id/cb_deportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deporte" />
+
+    <Spinner
+        android:id="@+id/sp_provincias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnprovincia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="selecciones"
+        android:onClick="selecciones"/>
+
+</LinearLayout>
