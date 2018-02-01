@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         String provinciaseleccioanda = spprovincias.getSelectedItem().toString();
         Toast.makeText(getApplicationContext(), "Provincia: "+provinciaseleccioanda, Toast.LENGTH_SHORT).show();
-        
+
 
     }
 
